@@ -56,8 +56,12 @@ matrix:
       env: MOODLE_BRANCH=MOODLE_33_STABLE DB=pgsql IGNORE_PATHS=integration,filtersettings.php
     - php: 7.0
       env: MOODLE_BRANCH=MOODLE_39_STABLE DB=pgsql IGNORE_PATHS=integration,filtersettings.php
+    - php: 7.0
+      env: MOODLE_BRANCH=MOODLE_39_STABLE DB=mysqli IGNORE_PATHS=integration,filtersettings.php
     - php: 7.1
       env: MOODLE_BRANCH=MOODLE_39_STABLE DB=pgsql IGNORE_PATHS=integration,filtersettings.php
+    - php: 7.1
+      env: MOODLE_BRANCH=MOODLE_39_STABLE DB=mysqli IGNORE_PATHS=integration,filtersettings.php
 
 
 before_install:
