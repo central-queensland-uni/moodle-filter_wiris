@@ -70,7 +70,7 @@ before_install:
   - export PATH="$(cd ci/bin; pwd):$(cd ci/vendor/bin; pwd):$PATH"
 
 install:
-  - moodle-plugin-ci add-plugin --branch $TRAVIS_BRANCH wiris/moodle-atto-wiris
+  - moodle-plugin-ci add-plugin --branch $TRAVIS_BRANCH wiris/moodle-atto_wiris
   - moodle-plugin-ci install
 
 script:
